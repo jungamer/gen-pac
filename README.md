@@ -1,6 +1,6 @@
 # 生成shadowsocks pac文件
 ## 使用
-1. 执行./gen_pac.sh;  
+1. 执行./gen.sh;  
 2. 在当前文件夹下会生成pac.txt;  
 3. 用新生成的pac.txt 替换掉windows下shadowsocks.exe同级目录下的pac.txt文件。可通过PAC->编辑本地PAC文件找到。  
 
@@ -11,7 +11,7 @@
 > ```--user-rule="||youtube.com"```表示走代理。
 ```--user-rule="@@youtube.com"```表示不走代理。
 
-## gen_pac.sh
+## gen.sh
 ```
 #!/bin/bash
 curl -L -O https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
